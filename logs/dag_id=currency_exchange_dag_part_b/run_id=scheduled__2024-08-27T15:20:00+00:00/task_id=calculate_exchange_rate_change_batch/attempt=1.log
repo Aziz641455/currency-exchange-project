@@ -1,0 +1,28 @@
+[2024-08-27T15:21:01.001+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-08-27T15:21:01.007+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509
+[2024-08-27T15:21:01.010+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch'
+[2024-08-27T15:21:01.038+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509
+[2024-08-27T15:21:01.039+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch'
+[2024-08-27T15:21:01.061+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: currency_exchange_dag_part_b.calculate_exchange_rate_change_batch scheduled__2024-08-27T15:20:00+00:00 [queued]>
+[2024-08-27T15:21:01.068+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: currency_exchange_dag_part_b.calculate_exchange_rate_change_batch scheduled__2024-08-27T15:20:00+00:00 [queued]>
+[2024-08-27T15:21:01.069+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-08-27T15:21:01.080+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): calculate_exchange_rate_change_batch> on 2024-08-27 15:20:00+00:00
+[2024-08-27T15:21:01.085+0000] {standard_task_runner.py:57} INFO - Started process 214 to run task
+[2024-08-27T15:21:01.087+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'currency_exchange_dag_part_b', 'calculate_exchange_rate_change_batch', 'scheduled__2024-08-27T15:20:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/currency_exchange_dag_part_b.py', '--cfg-path', '/tmp/tmptz59z9p1']
+[2024-08-27T15:21:01.088+0000] {standard_task_runner.py:85} INFO - Job 77: Subtask calculate_exchange_rate_change_batch
+[2024-08-27T15:21:01.100+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-08-27T15:21:01.128+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509
+[2024-08-27T15:21:01.129+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=currency_exchange_dag_part_b/run_id=scheduled__2024-08-27T15:20:00+00:00/task_id=calculate_exchange_rate_change_batch'
+[2024-08-27T15:21:01.133+0000] {task_command.py:410} INFO - Running <TaskInstance: currency_exchange_dag_part_b.calculate_exchange_rate_change_batch scheduled__2024-08-27T15:20:00+00:00 [running]> on host d374469d5083
+[2024-08-27T15:21:01.144+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-08-27T15:21:01.207+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='currency_exchange_dag_part_b' AIRFLOW_CTX_TASK_ID='calculate_exchange_rate_change_batch' AIRFLOW_CTX_EXECUTION_DATE='2024-08-27T15:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-27T15:20:00+00:00'
+[2024-08-27T15:21:01.213+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-08-27T15:21:01.221+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=currency_exchange_dag_part_b, task_id=calculate_exchange_rate_change_batch, execution_date=20240827T152000, start_date=20240827T152101, end_date=20240827T152101
+[2024-08-27T15:21:01.260+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-08-27T15:21:01.282+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
