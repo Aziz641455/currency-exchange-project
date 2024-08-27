@@ -5,6 +5,7 @@ Let's revise the solution, focusing on the purpose of calculating exchange rates
 1. **Database: PostgreSQL**:
    - Table `rates`: Holds the raw exchange rate data ingested from a CSV file.
    - Table `exchange_rates`: Holds the calculated percentage changes for each currency pair.
+   - Table `exchange_rates_part_b`: Holds the calculated percentage changes for each currency pair for part B of the assignment.
 
 2. **Airflow**: 
    - DAG `currency_exchange_dag`: Scheduled to run every hour, fetches data from the `rates` table, calculates the percentage change, and updates the `exchange_rates` table.
