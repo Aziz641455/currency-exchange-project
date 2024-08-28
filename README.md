@@ -1,4 +1,4 @@
-Let's revise the solution, focusing on the purpose of calculating exchange rates and their percentage changes. Here's the updated solution with code, detailed steps, and architecture.
+Let's revise the solution, focusing on the purpose of calculating exchange rates and their percentage changes. Here's the solution with code, detailed steps, and architecture.
 
 ### Architecture Overview
 
@@ -9,6 +9,7 @@ Let's revise the solution, focusing on the purpose of calculating exchange rates
 
 2. **Airflow**: 
    - DAG `currency_exchange_dag`: Scheduled to run every hour, fetches data from the `rates` table, calculates the percentage change, and updates the `exchange_rates` table.
+   - DAG `currency_exchange_dag_part_b`: Scheduled to run every one minute, fetches data from the `rates` table, calculates the percentage change, and updates the `exchange_rates_part_b` table.
 
 ### Steps and Code
 
