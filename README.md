@@ -13,6 +13,10 @@ Let's revise the solution, focusing on the purpose of calculating exchange rates
 
 ### Steps and Code
 
+#### 0. Requirements:
+      - You need `Git` installed.
+      - You need `Docker` installed to run the env.
+
 #### 1. Set up the environment for the project (Using Docker compose)
 You should already have PostgreSQL running inside Docker. Here's the setup.
 
